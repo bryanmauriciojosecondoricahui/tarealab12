@@ -1,0 +1,23 @@
+// app-routing.module.ts
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
+import { PostDetailsComponent } from './posts/post-details/post-details.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+
+const routes: Routes = [
+  { path: 'about', component: AboutComponent },
+  { path: 'posts', component: PostListComponent },
+  { path: 'posts/:id', component: PostDetailsComponent },
+  { path: '', component: HomeComponent },
+  { path: 'not-found', component: NotFoundComponent },
+  { path: '**', redirectTo: '/not-found', pathMatch: 'full' },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

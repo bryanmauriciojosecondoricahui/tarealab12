@@ -1,0 +1,8 @@
+<!-- src/app/posts/post-details/post-details.component.html -->
+<div class="post-details-container">
+  <h2 class="post-title">Post Details</h2>
+  <div *ngIf="post">
+    <h3>{{ post.title }}</h3>
+    <p class="post-content">{{ post.content }}</p>
+  </div>
+</div>

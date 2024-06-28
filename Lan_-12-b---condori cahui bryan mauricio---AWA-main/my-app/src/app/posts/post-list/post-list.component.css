@@ -1,0 +1,35 @@
+/* src/app/posts/post-list/post-list.component.css */
+.post-list-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .post-list-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .post-item {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .post-link {
+    text-decoration: none;
+    color: #428bca; /* Bootstrap's primary color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .post-link:hover {
+    color: #2a6496; /* Bootstrap's primary color (darker shade) on hover */
+  }
+  
+  /* Optional: Add more styling as needed */
+  
